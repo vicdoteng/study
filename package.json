@@ -1,0 +1,21 @@
+{
+  "name": "study",
+  "version": "0.0.0",
+  "description": "node app setup",
+  "main": "app.ts",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "tsc",
+    "exec": "node dist/out/app.js",
+    "start": "npm-run-all build exec"
+  },
+  "license": "Apache 2.0",
+  "dependencies": {
+    "typescript": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.17",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1"
+  }
+}
